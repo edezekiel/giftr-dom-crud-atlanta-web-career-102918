@@ -11,5 +11,8 @@ function showGifts() {
     let gift = document.createElement('li')
     gift.innerText = gifts[i].name
     giftNode.appendChild(gift)
+    let image = document.createElement('img')
+    image.src = gifts[i].image
+    gift.appendChild(image)
   }
 }
